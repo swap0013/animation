@@ -1,0 +1,45 @@
+#parent{
+    position: relative;
+}
+
+
+
+
+.road{
+    background-image: url("road.jpg");
+    height: 300px;
+    background-position: center;
+    margin-top: 200px;
+    
+}
+
+.gif{
+    position: absolute;
+   top: 0;
+   left: 10px;
+   animation: move 10s infinite;
+   
+    
+}
+@keyframes move {
+    0% {transform: translate(0px);}
+    50%{transform: translate(370px);}
+    100%{transform: translate(1000px);}
+}
+.line{
+    height: 300px;
+    width: 20px;
+    background-color: rgb(255, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 650px;
+    animation: moveline 5s infinite;
+    
+    
+}
+@keyframes moveline {
+  
+    0%{height: 0px;}
+    100%{height: 300px;}   
+}
+
